@@ -33,7 +33,21 @@
             background-color: #0056b3;
         }
     </style>
-    <script src="https://cdn.amplitude.com/script/f35e4b094aed8517a21fe7ba7e1b99ff.js"></script><script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('f35e4b094aed8517a21fe7ba7e1b99ff', {"fetchRemoteConfig":true,"autocapture":true});</script>
+    <script>
+    window.HYRO_WIDGET_ID = "3f576b7f-760a-4e76-aa16-ef4c937d5acf";
+    (function() {
+      const f = function() {
+        const d = document;
+        const l = d.createElement('script');
+        l.type = 'text/javascript';
+        l.async = true;
+        l.src = 'https://api.airbud.io/widgets/widget.js?id=' + window.HYRO_WIDGET_ID;
+        const x = d.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(l, x);
+      };
+      window.addEventListener('load', f, false);
+    })();
+  </script>
 </head>
 <body>
     <p>
